@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devices-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>DE KEMASKEUN</title>
+	<link rel="icon" href="logo/LOGODEKEMASKEUN-03.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="wrap">
+		<nav>
+			<div class="logo">
+				De Kemaskeun
+			</div>
+			<div class="logo2">
+				E - C a t a l o g u e
+			</div>
+			<button type="button" class="btn-hamburger" data-action="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-menu">
+				<li class="nav-item"><a href="#">Beranda</a></li>
+				<li class="nav-item dropdown">
+					<a href="#" data-action="dropdown-toggle">Katalog</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="makananberat.html">Makanan Berat</a>
+						<a class="dropdown-item" href="powder.html">Bumbu Masak</a>
+						<a class="dropdown-item" href="fastfood.html">Makanan Cepat Saji</a>
+						<a class="dropdown-item" href="cake.html">Kue</a>
+						<a class="dropdown-item" href="snack.html">Makanan Ringan</a>
+						<a class="dropdown-item" href="streetfood.html">Jajanan Pasar</a>
+						<a class="dropdown-item" href="minuman.html">Minuman</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="aboutus.html">Tentang Kami</a></li>
+				<li class="nav-item"><a href="https://api.whatsapp.com/send?phone=6282181872936&text=Halo">Pesan Sekarang</a></li>
+			</ul>
+		</nav>
+	<div class="container">
+		<section>
+			<img class="profil" src="logo/kemaskeun.png" alt="">
+			<h2><a id="dekemaskeun">De Kemaskeun</a> adalah sebuah perusahaan yang bergerak di bidang pembuatan kemasan untuk tiap jenis makanan dan minuman.
+				Yang membuat <a id="dekemaskeun">De Kemaskeun</a> unik adalah kemasan yang dihasilkan tidak mengandung plastik. Sangat ramah lingkungan bukan? Tunggu apa lagi ayo pesan sekarang!
+			</h2><br><br>
+			<h1>Ragam Kemasan</h1>
+		</section>
+		<main class="grid">
+			<article>
+				<img src="logo/makananberat.jpg" alt="makananberat">
+				<div class="text">
+					<h5>Makanan Berat</h5>
+					<a href="makananberat.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/powder.jpg" alt="powder">
+				<div class="text">
+					<h5>Bumbu Masak</h5>
+					<a href="powder.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/fastfood.jpg" alt="fastfood">
+				<div class="text">
+					<h5>Makanan Cepat Saji</h5>
+					<a href="fastfood.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/cake.jpg" alt="cake">
+				<div class="text">
+					<h5>Kue</h5>
+					<a href="cake.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/snack.jpg" alt="snack">
+				<div class="text">
+					<h5>Makanan Ringan</h5>
+					<a href="snack.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/streetfood.jpg" alt="streetfood">
+				<div class="text">
+					<h5>Jajanan Pasar</h5>
+					<a href="streetfood.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/minuman.jpg" alt="minuman">
+				<div class="text">
+					<h5>Minuman</h5>
+					<a href="minuman.html"><button>Detail</button></a>
+				</div>
+			</article>
+
+			<article>
+				<img src="logo/comingsoon.jpg" alt="comingsoon">
+				<div class="text">
+					<h5>Coming Soon!!</h5>
+					<a href="#"><button>Detail</button></a>
+				</div>
+			</article>
+		</main>
+	</div>
+	</div>
+	<footer>
+		<p>De Kemaskeun &copy;2021</p>
+		</footer>
+
+<script>
+let nav = document.querySelector('nav');
+let dropdown = nav.querySelector('.dropdown');
+let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+let navToggle = nav.querySelector("[data-action='nav-toggle']");
+
+dropdownToggle.addEventListener('click', () => {
+	if (dropdown.classList.contains('show')) {
+		dropdown.classList.remove('show');
+	} else {
+		dropdown.classList.add('show');
+	}
+})
+
+navToggle.addEventListener('click', () => {
+	if (nav.classList.contains('opened')) {
+		nav.classList.remove('opened');
+	} else {
+		nav.classList.add('opened');
+	}
+})
+</script>
+</body>
+</html>

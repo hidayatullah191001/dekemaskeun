@@ -1,0 +1,20 @@
+.warnaKardus{
+    background: rgb(184,131,79);
+    background: -moz-linear-gradient(27deg, rgba(184,131,79,1) 1%, rgba(177,121,65,1) 69%);
+    background: -webkit-linear-gradient(27deg, rgba(184,131,79,1) 1%, rgba(177,121,65,1) 69%);
+    background: linear-gradient(27deg, rgba(184,131,79,1) 1%, rgba(177,121,65,1) 69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b8834f",endColorstr="#b17941",GradientType=1);
+}
+
+.warnaBaru{
+	  background: rgb(148,0,0);
+background: -moz-linear-gradient(27deg, rgba(148,0,0,1) 1%, rgba(152,17,17,1) 69%);
+background: -webkit-linear-gradient(27deg, rgba(148,0,0,1) 1%, rgba(152,17,17,1) 69%);
+background: linear-gradient(27deg, rgba(148,0,0,1) 1%, rgba(152,17,17,1) 69%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#940000",endColorstr="#981111",GradientType=1); 
+}
+
+.text-kardus{
+	color: #ad8762;
+}
+

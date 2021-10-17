@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devices-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>DE KEMASKEUN - Bumbu Masak</title>
+		<link rel="icon" href="logo/LOGODEKEMASKEUN-03.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+	<div id="wrap">
+		<nav>
+			<div class="logo">
+				De Kemaskeun
+			</div>
+			<div class="logo2">
+				E - C a t a l o g u e
+			</div>
+			<button type="button" class="btn-hamburger" data-action="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<ul class="nav-menu">
+				<li class="nav-item"><a href="index.html">Beranda</a></li>
+				<li class="nav-item dropdown">
+					<a href="#" data-action="dropdown-toggle">Katalog</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="makananberat.html">Makanan Berat</a>
+						<a class="dropdown-item" href="#">Bumbu Masak</a>
+						<a class="dropdown-item" href="fastfood.html">Makanan Cepat Saji</a>
+						<a class="dropdown-item" href="cake.html">Kue</a>
+						<a class="dropdown-item" href="snack.html">Makanan Ringan</a>
+						<a class="dropdown-item" href="streetfood.html">Jajanan Pasar</a>
+						<a class="dropdown-item" href="minuman.html">Minuman</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="aboutus.html">Tentang Kami</a></li>
+				<li class="nav-item"><a href="https://api.whatsapp.com/send?phone=6282181872936&text=Halo">Pesan Sekarang</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<section>
+				<h1>Kemasan Bumbu Masak</h1>
+			</section>
+			<main class="grid">
+				<article>
+					<img src="logo/comingsoon.jpg" alt="">
+					<div class="text">
+						<h5>Keterangan : </h5>
+					</div>
+				</article>
+
+				<article>
+					<img src="logo/comingsoon.jpg" alt="">
+					<div class="text">
+						<h5>Keterangan : </h5>
+					</div>
+				</article>
+
+				<article>
+					<img src="logo/comingsoon.jpg" alt="">
+					<div class="text">
+						<h5>Keterangan : </h5>
+					</div>
+				</article>
+
+				<article>
+					<img src="logo/comingsoon.jpg" alt="">
+					<div class="text">
+						<h5>Keterangan : </h5>
+					</div>
+				</article>
+			</main>
+		</div>
+		</div>
+		<footer>
+			<p>De Kemaskeun &copy;2021</p>
+			</footer>
+<script>
+	let nav = document.querySelector('nav');
+	let dropdown = nav.querySelector('.dropdown');
+	let dropdownToggle = nav.querySelector("[data-action='dropdown-toggle']");
+	let navToggle = nav.querySelector("[data-action='nav-toggle']");
+			
+		dropdownToggle.addEventListener('click', () => {
+			if (dropdown.classList.contains('show')) {
+				dropdown.classList.remove('show');
+			} else {
+				dropdown.classList.add('show');
+				}
+		})
+			
+		navToggle.addEventListener('click', () => {
+			if (nav.classList.contains('opened')) {
+				nav.classList.remove('opened');
+			} else {
+				nav.classList.add('opened');
+				}
+		})
+</script>
+</body>
+</html>
